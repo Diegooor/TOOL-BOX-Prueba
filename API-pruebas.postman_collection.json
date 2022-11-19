@@ -1,0 +1,265 @@
+{
+	"id": "b673f97c-980a-4654-b9da-4383fd807e36",
+	"name": "TOOL-BOX",
+	"timestamp": "2022-11-18T22:22:14.559Z",
+	"collection_id": "23129497-b90366ea-fec5-43de-8411-ac324cdfbde8",
+	"folder_id": 0,
+	"environment_id": "23129497-455ba7c2-a8da-48bb-b866-654f78aaa80f",
+	"totalPass": 12,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8c9a93f8-d926-4680-85e4-b745ee6914bc",
+			"name": "API ECHO",
+			"url": "https://echo-serv.tbxnet.com/v1/echo?text=test",
+			"time": 163,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"PRUEBA QUE VALIDA QUE LA RESPUESTA OBTENIDA ES CORRECTA(text = test)": true
+			},
+			"testPassFailCounts": {
+				"PRUEBA QUE VALIDA QUE LA RESPUESTA OBTENIDA ES CORRECTA(text = test)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				163
+			],
+			"allTests": [
+				{
+					"PRUEBA QUE VALIDA QUE LA RESPUESTA OBTENIDA ES CORRECTA(text = test)": true
+				}
+			]
+		},
+		{
+			"id": "3a0c2f4e-70bf-4090-a7e1-47f22cadc555",
+			"name": "API SISTEM PING",
+			"url": "https://echo-serv.tbxnet.com/v1/system/ping",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"PRUEBA QUE VALIDA QUE RESPUESTA OBTENIDA ES CORRECTA (ok = true).": true
+			},
+			"testPassFailCounts": {
+				"PRUEBA QUE VALIDA QUE RESPUESTA OBTENIDA ES CORRECTA (ok = true).": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"PRUEBA QUE VALIDA QUE RESPUESTA OBTENIDA ES CORRECTA (ok = true).": true
+				}
+			]
+		},
+		{
+			"id": "dc8631e6-c890-41be-bc71-40287a2fa21a",
+			"name": "QA-TEST-1",
+			"url": "https://echo-serv.tbxnet.com/v1/qa/test1",
+			"time": 156,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"LA RESPUESTA OBTENIDA ES (true)": true,
+				"EL STATUS DE LA PRUEBA ES (200)": true,
+				"RESPUESTA DE LA API CONTIENE CAMPO(date)": true
+			},
+			"testPassFailCounts": {
+				"LA RESPUESTA OBTENIDA ES (true)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"EL STATUS DE LA PRUEBA ES (200)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESPUESTA DE LA API CONTIENE CAMPO(date)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				156
+			],
+			"allTests": [
+				{
+					"LA RESPUESTA OBTENIDA ES (true)": true,
+					"EL STATUS DE LA PRUEBA ES (200)": true,
+					"RESPUESTA DE LA API CONTIENE CAMPO(date)": true
+				}
+			]
+		},
+		{
+			"id": "eb8e2c52-a353-4f33-85e1-c195d7433e6d",
+			"name": "QA-TEST-2",
+			"url": "https://echo-serv.tbxnet.com/v1/qa/test2",
+			"time": 166,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"STATUS DE LA PRUEBA ES (500)": true
+			},
+			"testPassFailCounts": {
+				"STATUS DE LA PRUEBA ES (500)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				166
+			],
+			"allTests": [
+				{
+					"STATUS DE LA PRUEBA ES (500)": true
+				}
+			]
+		},
+		{
+			"id": "3e0cc07a-c165-4dcf-bd7a-9cefc98ef78a",
+			"name": "QA-TEST-3",
+			"url": "https://echo-serv.tbxnet.com/v1/qa/test3",
+			"time": 162,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"STATUS DE LA PRUEBA ES (401) DEBIDO A BUSINESS RULES": true,
+				"PRUEBA QUE VALIDA CAMPO (message)": true
+			},
+			"testPassFailCounts": {
+				"STATUS DE LA PRUEBA ES (401) DEBIDO A BUSINESS RULES": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRUEBA QUE VALIDA CAMPO (message)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"STATUS DE LA PRUEBA ES (401) DEBIDO A BUSINESS RULES": true,
+					"PRUEBA QUE VALIDA CAMPO (message)": true
+				}
+			]
+		},
+		{
+			"id": "da243c22-fb89-4e1d-a34b-0ce5b32e5bf5",
+			"name": "QA-TEST-4",
+			"url": "https://echo-serv.tbxnet.com/v1/qa/test4",
+			"time": 181,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"PRUEBA QUE VALIDA QUE EL R-QUEST FALLA(500)": true,
+				"PRUEBA QUE VALIDA MULTIPLES ASSERCIONS EN EL CAMPO (details)": true
+			},
+			"testPassFailCounts": {
+				"PRUEBA QUE VALIDA QUE EL R-QUEST FALLA(500)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRUEBA QUE VALIDA MULTIPLES ASSERCIONS EN EL CAMPO (details)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"PRUEBA QUE VALIDA QUE EL R-QUEST FALLA(500)": true,
+					"PRUEBA QUE VALIDA MULTIPLES ASSERCIONS EN EL CAMPO (details)": true
+				}
+			]
+		},
+		{
+			"id": "c0cec3c8-629d-4d43-b7a9-a3bdb4abc74b",
+			"name": "API SISTEM VERSION",
+			"url": "https://echo-serv.tbxnet.com/v1/system/version",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"VALIDACION DE MULTIPLES  ASSERTIONS": true,
+				"PRUEBA QUE VALIDA QUE EL AMBIENTE DE PRUEBA ES (TOOLBOX)": true
+			},
+			"testPassFailCounts": {
+				"VALIDACION DE MULTIPLES  ASSERTIONS": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRUEBA QUE VALIDA QUE EL AMBIENTE DE PRUEBA ES (TOOLBOX)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"VALIDACION DE MULTIPLES  ASSERTIONS": true,
+					"PRUEBA QUE VALIDA QUE EL AMBIENTE DE PRUEBA ES (TOOLBOX)": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1148,
+	"collection": {
+		"requests": [
+			{
+				"id": "8c9a93f8-d926-4680-85e4-b745ee6914bc",
+				"method": "GET"
+			},
+			{
+				"id": "3a0c2f4e-70bf-4090-a7e1-47f22cadc555",
+				"method": "GET"
+			},
+			{
+				"id": "dc8631e6-c890-41be-bc71-40287a2fa21a",
+				"method": "GET"
+			},
+			{
+				"id": "eb8e2c52-a353-4f33-85e1-c195d7433e6d",
+				"method": "GET"
+			},
+			{
+				"id": "3e0cc07a-c165-4dcf-bd7a-9cefc98ef78a",
+				"method": "GET"
+			},
+			{
+				"id": "da243c22-fb89-4e1d-a34b-0ce5b32e5bf5",
+				"method": "GET"
+			},
+			{
+				"id": "c0cec3c8-629d-4d43-b7a9-a3bdb4abc74b",
+				"method": "GET"
+			}
+		]
+	}
+}
